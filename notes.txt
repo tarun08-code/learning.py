@@ -1,0 +1,2 @@
+day 3 
+basics about python lists arrays strings etc..
