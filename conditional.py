@@ -7,3 +7,9 @@ elif temp > 20:
 else:
   print("It's a cold day")
 print("Done")
+
+#ternary operator 
+
+age = 25 
+message = "eligible" if age >= 18 else "not eligible"
+print (message)
