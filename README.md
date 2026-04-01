@@ -25,3 +25,5 @@ last = "tarun"
 full = f
 
 python anagram 
+
+commit of the day 
