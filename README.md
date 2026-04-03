@@ -23,5 +23,3 @@ first = "dinesh"
 last = "tarun"
 
 full = f
-
-git add .
