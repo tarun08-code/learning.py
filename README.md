@@ -25,3 +25,5 @@ last = "tarun"
 full = f
 
 git add .
+
+done with the figma designs 😭😭
