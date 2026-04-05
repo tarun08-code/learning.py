@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brindavan Matrimonial — Family Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#3f6653",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#86af99",
+                        "secondary-fixed-dim": "#e6c364",
+                        "secondary-fixed": "#ffe08f",
+                        "secondary": "#755b00",
+                        "on-tertiary-container": "#ada693",
+                        "surface-bright": "#fcf8ff",
+                        "primary": "#012d1d",
+                        "on-primary-fixed": "#002114",
+                        "surface-variant": "#e2e0fc",
+                        "inverse-surface": "#2f2e43",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1a1a2e",
+                        "on-secondary-fixed": "#241a00",
+                        "inverse-on-surface": "#f2efff",
+                        "error": "#ba1a1a",
+                        "primary-container": "#1b4332",
+                        "surface": "#fcf8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#584400",
+                        "on-secondary-container": "#785d00",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "primary-fixed": "#c1ecd4",
+                        "tertiary-fixed": "#ebe2cd",
+                        "surface-container": "#efecff",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#4b4637",
+                        "on-background": "#1a1a2e",
+                        "outline": "#717973",
+                        "tertiary-fixed-dim": "#cec6b2",
+                        "surface-dim": "#dad7f3",
+                        "surface-container-low": "#f5f2ff",
+                        "background": "#fcf8ff",
+                        "tertiary-container": "#403c2d",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c1c8c2",
+                        "secondary-container": "#fed977",
+                        "tertiary": "#2a2619",
+                        "surface-container-high": "#e8e5ff",
+                        "inverse-primary": "#a5d0b9",
+                        "on-tertiary-fixed": "#1f1b0f",
+                        "surface-container-highest": "#e2e0fc",
+                        "on-surface-variant": "#414844"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-[#fdfcf0] text-on-surface min-h-screen">
+<!-- Top Navigation Shell (Suppressed as per task but following identity for consistency) -->
+<header class="bg-[#fdfcf0] sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#012d1d]">The Modern Heirloom</div>
+<div class="hidden md:flex gap-8 items-center">
+<span class="text-[#1a1a2e]/60 pb-1">Personal</span>
+<span class="text-[#012d1d] border-b-2 border-[#755b00] pb-1 font-bold">Family</span>
+<span class="text-[#1a1a2e]/60 pb-1">Career</span>
+<span class="text-[#1a1a2e]/60 pb-1">Preferences</span>
+<span class="text-[#1a1a2e]/60 pb-1">Bio</span>
+</div>
+<button class="text-[#012d1d] font-semibold hover:text-[#755b00] transition-colors">Save &amp; Exit</button>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 py-12">
+<!-- Progress Bar -->
+<div class="mb-12">
+<div class="flex justify-between mb-4">
+<div class="flex flex-col items-center flex-1">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-sm mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">Personal Info</span>
+</div>
+<div class="flex-1 h-[2px] bg-secondary-fixed self-center mb-6"></div>
+<div class="flex flex-col items-center flex-1">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container text-sm mb-2 font-bold ring-4 ring-secondary-container/30">2</div>
+<span class="text-xs font-bold text-primary">Family Details</span>
+</div>
+<div class="flex-1 h-[2px] bg-surface-container-highest self-center mb-6"></div>
+<div class="flex flex-col items-center flex-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant text-sm mb-2">3</div>
+<span class="text-xs font-medium text-on-surface-variant">Education</span>
+</div>
+<div class="flex-1 h-[2px] bg-surface-container-highest self-center mb-6"></div>
+<div class="flex flex-col items-center flex-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant text-sm mb-2">4</div>
+<span class="text-xs font-medium text-on-surface-variant">Preferences</span>
+</div>
+<div class="flex-1 h-[2px] bg-surface-container-highest self-center mb-6"></div>
+<div class="flex flex-col items-center flex-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant text-sm mb-2">5</div>
+<span class="text-xs font-medium text-on-surface-variant">Bio</span>
+</div>
+</div>
+</div>
+<div class="grid lg:grid-cols-12 gap-12 items-start">
+<!-- Main Content Area -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-8 lg:p-12 shadow-sm border border-outline-variant/10">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h1 class="text-4xl font-serif italic text-primary mb-2">Family Roots</h1>
+<p class="text-on-surface-variant font-light">Tell us about the people who shaped your heritage.</p>
+</div>
+<span class="bg-primary-container text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Step 2 of 5</span>
+</div>
+<form class="space-y-10">
+<!-- Father's Info Section -->
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Father's Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="Full name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Father's Occupation</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="e.g. Retired Civil Engineer" type="text"/>
+</div>
+</div>
+<!-- Mother's Info Section -->
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Mother's Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="Full name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Mother's Occupation</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="e.g. Homemaker" type="text"/>
+</div>
+</div>
+<!-- Family Structure Section -->
+<div class="space-y-6">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-surface-container-low rounded-xl border-l-4 border-secondary">
+<div>
+<h3 class="font-serif text-lg text-primary">Family Type</h3>
+<p class="text-xs text-on-surface-variant">Do you live in a joint or nuclear setup?</p>
+</div>
+<div class="flex bg-surface-container-high p-1 rounded-lg">
+<button class="px-6 py-2 rounded-md text-sm font-bold bg-white text-primary shadow-sm" type="button">Nuclear</button>
+<button class="px-6 py-2 rounded-md text-sm font-medium text-on-surface-variant hover:text-primary transition-all" type="button">Joint</button>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Family Status</label>
+<select class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary/20 transition-all appearance-none cursor-pointer">
+<option>Middle Class</option>
+<option>Upper Middle Class</option>
+<option>Rich / Affluent</option>
+<option>Noble / Traditional Heritage</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Siblings Section -->
+<div class="grid md:grid-cols-2 gap-10 bg-surface-container-low/50 p-8 rounded-xl border border-outline-variant/10">
+<div class="space-y-6">
+<h4 class="font-bold text-xs uppercase tracking-widest text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">boy</span> Brothers
+                            </h4>
+<div class="flex gap-4">
+<div class="flex-1 space-y-2">
+<label class="text-xs text-on-surface-variant">Total No.</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-2 focus:ring-2 focus:ring-secondary/20 transition-all" min="0" type="number"/>
+</div>
+<div class="flex-1 space-y-2">
+<label class="text-xs text-on-surface-variant">Married</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-2 focus:ring-2 focus:ring-secondary/20 transition-all" min="0" type="number"/>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-xs uppercase tracking-widest text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">girl</span> Sisters
+                            </h4>
+<div class="flex gap-4">
+<div class="flex-1 space-y-2">
+<label class="text-xs text-on-surface-variant">Total No.</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-2 focus:ring-2 focus:ring-secondary/20 transition-all" min="0" type="number"/>
+</div>
+<div class="flex-1 space-y-2">
+<label class="text-xs text-on-surface-variant">Married</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-2 focus:ring-2 focus:ring-secondary/20 transition-all" min="0" type="number"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Location Section -->
+<div class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Current Family Location</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline text-lg">location_on</span>
+<input class="w-full bg-surface-container-low border-none rounded-lg pl-10 pr-4 py-3 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="City, State" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Native Place</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-secondary/20 transition-all placeholder:text-outline-variant" placeholder="Ancestral village or city" type="text"/>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row justify-between items-center pt-10 gap-4">
+<button class="w-full sm:w-auto px-10 py-3 border border-outline rounded-lg font-bold text-primary hover:bg-surface-container-low transition-all" type="button">Back</button>
+<button class="w-full sm:w-auto px-12 py-3 bg-gradient-to-r from-secondary to-[#c9a84c] text-white rounded-lg font-bold shadow-lg shadow-secondary/20 hover:scale-[1.02] transition-transform flex items-center justify-center gap-2" type="submit">
+                            Save &amp; Continue
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Sidebar / Helper Section -->
+<div class="lg:col-span-4 sticky top-28 space-y-8">
+<!-- Visual Anchor -->
+<div class="relative rounded-2xl overflow-hidden h-64 shadow-xl">
+<img alt="Indian family heritage" class="w-full h-full object-cover" data-alt="Warm golden-hour portrait of an multi-generational Indian family gathered in a traditional courtyard with elegant ethnic wear and soft sunbeams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6tgYaCS4UVSVbgdg5-UjhAO3T7nzPxibWcAqvRLp8vCOIOqC_G06D79xyKA6xmuaxuk_pO0V-Blb9X6LC1UU8mvSsPJeieyS6ZjktYpXfMiSYUxdFuBn94pqpuQ_A2GX2_VRvk68jGXm1ZPYSzEQYy8e3m9I4DzofHy8K5xahQaF4T39D4s80VnEHKB2hy5p_1NPiyZsERvb0wcQA5vxk1mMQDNPARKr29iqJ6YrfbQQ6onDNSTCuS__5cqQuGWGqWL3rh-5ojzMQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<p class="text-white font-serif italic text-lg leading-tight">"A family is a link to our past and a bridge to our future."</p>
+</div>
+</div>
+<!-- Tips Card -->
+<div class="bg-secondary-container/20 p-8 rounded-2xl space-y-4">
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h3 class="font-bold uppercase tracking-widest text-xs">Legacy Insights</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="text-secondary mt-1 material-symbols-outlined text-sm">circle</span>
+<p class="text-sm text-on-surface-variant leading-relaxed">Profiles with detailed family information receive <strong>45% higher response rates</strong> from serious prospects.</p>
+</li>
+<li class="flex gap-3 items-start">
+<span class="text-secondary mt-1 material-symbols-outlined text-sm">circle</span>
+<p class="text-sm text-on-surface-variant leading-relaxed">Mentioning your father’s or mother’s profession helps partners understand your lifestyle expectations.</p>
+</li>
+</ul>
+<div class="pt-4 border-t border-secondary/10">
+<button class="text-secondary font-bold text-sm flex items-center gap-2">
+                            Need help? <span class="material-symbols-outlined text-sm">contact_support</span>
+</button>
+</div>
+</div>
+<!-- Heritage Divider Illustration -->
+<div class="flex justify-center py-4 opacity-30">
+<svg fill="none" height="20" viewbox="0 0 100 20" width="100" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10C20 10 30 2 50 2C70 2 80 18 100 18" stroke="#717973" stroke-width="1"></path>
+<circle cx="50" cy="2" fill="#755b00" r="2"></circle>
+</svg>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Space -->
+<footer class="max-w-7xl mx-auto px-8 py-12 text-center text-on-surface-variant/40 text-xs font-light">
+        © 2024 The Modern Heirloom. All rights reserved. 
+        <span class="mx-2">|</span> 
+        Privacy Policy 
+        <span class="mx-2">|</span> 
+        Member Support
+    </footer>
+</body></html>
