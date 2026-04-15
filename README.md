@@ -27,3 +27,5 @@ full = f
 git add .
 
 done with the figma designs 😭😭
+
+have a meeting on 17th april with client
