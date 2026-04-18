@@ -31,3 +31,5 @@ done with the figma designs 😭😭
 have a meeting on 17th april with client
 
 had an intervieew at hp 😭😂
+
+rbro i cant do this anymore streak of this 
